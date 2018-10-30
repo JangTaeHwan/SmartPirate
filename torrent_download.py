@@ -12,7 +12,7 @@ ses.listen_on(6881, 6891)
 
 info = lt.torrent_info(sys.argv[1].decode('utf-8'))
 h = ses.add_torrent({'ti': info, 'save_path': './'})
-h.set_upload_limit(100000)
+h.set_upload_limit(200000)
 print 'starting', h.name()
 
 while (not h.is_seed()):

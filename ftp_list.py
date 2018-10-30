@@ -7,7 +7,7 @@ import ftplib
 
 ftp = ftplib.FTP("192.168.1.1")
 ftp.encoding='utf-8'
-ftp.login("id", "passwd")
+ftp.login("id", "password")
 
 def list_files(dir):
     print(dir)
